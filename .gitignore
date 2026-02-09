@@ -40,3 +40,4 @@
 # debug information files
 *.dwo
 build/
+py_cuda_gray/foto.jpg
