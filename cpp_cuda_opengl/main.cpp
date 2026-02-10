@@ -19,12 +19,20 @@
     } \
 } while(0)
 
-/*Compilar con:
- *
+/*
+ Verificar si tienes GPU híbrida:
+ lspci | grep -E "VGA|3D"
+
+ 
+ Compilar con:
+ 
  g++ main.cpp -o canny_gl   `pkg-config --cflags --libs opencv4`   -lglfw -lGLEW -lGL   -lcuda -lcudart -I/usr/local/cuda/include   -L/usr/local/cuda/lib64
 
  Ejecutar con:
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia ./canny_gl
+
+
+*Nota: Este programa compila pero no se obtiene el resultado esperado (aún).
 */
 
 static const char* vs_src = R"(

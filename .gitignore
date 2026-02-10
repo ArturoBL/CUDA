@@ -43,3 +43,4 @@ build/
 py_cuda_gray/foto.jpg
 venv/
 video.mp4
+*.swp
